@@ -1,0 +1,35 @@
+.btn {
+  font-family: @font-family-heavy;
+
+  &.btn-link {
+    font-family: @font-family-book;
+  }
+
+  &:focus, &:active:focus, &.active:focus, &.focus, &.focus:active, &.active.focus {
+    outline: 0 none;
+  }
+
+  &.with-icon {
+    padding-right: 2em;
+    position: relative;
+
+    &:after {
+      content: "";
+      font-family: 'OETC';
+      display: block;
+      position: absolute;
+      right: .5em;
+      top: 0;
+      line-height: 36px;
+      font-size: 1.2em;
+    }
+  }
+
+  &.btn-cart {
+    padding-right: 2.5em;
+
+    &:after {
+      content: "\e60a";
+    }
+  }
+}

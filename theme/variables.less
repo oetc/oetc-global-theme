@@ -1,0 +1,87 @@
+@oetc-cdn-path: 'https://cdn.oetc.org';
+@icon-font-path: '@{oetc-cdn-path}/fonts/';
+@FontAwesomePath: '@{oetc-cdn-path}/fonts';
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+//## Gray and brand colors for use across Bootstrap.
+@brand-primary: #495A60;
+@brand-success: #22CD67;
+@brand-info: #00A1CD;
+@brand-warning: #EBC61F;
+@brand-danger: #C8120D;
+
+@gray-lightest: lighten(@gray-base, 95%); // #f2f2f2
+
+// Global text color on `<body>`.
+@text-color: @gray-base;
+
+// Global textual link color.
+@link-color: #00a1cd;
+
+//## Alert and Panel coloring
+@state-success-text: darken(@brand-success; 8%);
+@state-success-bg: lighten(@brand-success, 49%);
+@state-success-border: darken(@state-success-bg, 10%);
+
+@state-info-text: @brand-info;
+@state-info-bg: lighten(@brand-info, 58%);
+@state-info-border: darken(@state-info-bg, 10%);
+
+@state-warning-text: darken(@brand-warning, 15%);
+@state-warning-bg: lighten(@brand-warning, 45%);
+@state-warning-border: darken(@state-warning-bg, 10%);
+
+@state-danger-text: @brand-danger;
+@state-danger-bg: lighten(@brand-danger, 55%);
+@state-danger-border: darken(@state-danger-bg, 10%);
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@font-family-sans-serif: "avenir-book", Helvetica, Arial, sans-serif;
+@font-family-book: @font-family-sans-serif;
+@font-family-heavy: "avenir-heavy", @font-family-sans-serif;
+@font-family-base: @font-family-book;
+
+@headings-font-family: @font-family-heavy;
+@headings-font-weight: 800;
+
+@font-size-base: 14px;
+
+/*--------------------------------------------------------------
+# Inverted Navbar
+--------------------------------------------------------------*/
+// Reset inverted navbar basics
+@navbar-inverse-color: lighten(@brand-primary, 15%);
+@navbar-inverse-bg: @brand-primary;
+@navbar-inverse-border: darken(@navbar-inverse-bg, 5%);
+
+// Inverted navbar links
+@navbar-inverse-link-color: lighten(@navbar-inverse-bg, 65%);
+@navbar-inverse-link-hover-color: #fff;
+@navbar-inverse-link-hover-bg: darken(@navbar-inverse-bg, 3%);
+@navbar-inverse-link-active-color: @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg: darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color: lighten(@navbar-inverse-bg, 25%);
+@navbar-inverse-link-disabled-bg: transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color: @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color: #fff;
+@navbar-inverse-brand-hover-bg: transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg: darken(@navbar-inverse-bg, 15%);
+@navbar-inverse-toggle-icon-bar-bg: #fff;
+@navbar-inverse-toggle-border-color: darken(@navbar-inverse-bg, 15%);
+
+/*--------------------------------------------------------------
+# Legacy
+--------------------------------------------------------------*/
+// Legacy styles from original theme overrides
+@label-default-bg: #fff;
+@btn-default-color: #000;
+@btn-default-border: #ccc;
+@breadcrumb-bg: transparent;
