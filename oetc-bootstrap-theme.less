@@ -160,3 +160,14 @@ span.link {
 .affix-target {
   top: 20px;
 }
+
+// Helper class for fields that offer default help text alongside field validation errors
+.has-error {
+  .help-block.default-block {
+    color: lighten(@text-color, 25%);
+    
+    &.text-muted {
+      color: @text-muted;
+    }
+  }
+}
