@@ -95,6 +95,23 @@ a.link-muted, span.link-muted {
   }
 }
 
+// For same-page navigation links without an associated ID anchor
+span.link {
+  color: @link-color;
+  text-decoration: none;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+  }
+  
+  &:focus {
+    .tab-focus();
+  }
+}
+
 // Sometimes you need to override the default weight of a semantic element
 .weight-normal {
   font-family: @font-family-base;
