@@ -9,7 +9,7 @@
     margin-bottom: -1px;
 
     // Actual tabs (as links)
-    > a, > .pseudo-link {
+    > a, > .pseudo-link, > span.link {
       margin-right: 2px;
       line-height: @line-height-base;
       border: 1px solid transparent;
@@ -20,7 +20,7 @@
     }
 
     // Active state, and its :hover to override normal :hover
-    &.active > a, &.active > .pseudo-link {
+    &.active > a, &.active > .pseudo-link, &.active > span.link {
       &,
       &:hover,
       &:focus {
