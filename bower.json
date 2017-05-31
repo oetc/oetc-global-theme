@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "fontawesome": "3.2.1"
+    "fontawesome": "4.7.0"
   },
   "private": true
 }
