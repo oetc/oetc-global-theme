@@ -3,24 +3,59 @@
 @label-black-bg: @gray-base;
 
 .label-black {
-    .label-variant(@label-black-bg);
+  .label-variant(@label-black-bg);
 }
 @label-white-bg: #fff;
 
 .label-white {
-    .label-variant(@label-white-bg);
-    color: #111;
-    border: 2px solid @gray;
+  .label-variant(@label-white-bg);
+  color: #111;
+  border: 2px solid @gray;
 }
 // Adds small size to labels
 .label-sm {
-    padding: 0.3em 0.6em 0.2em;
-    font-size: 56%;
-    line-height: 0.1;
-    vertical-align: middle;
-    // Quick fix for labels in buttons
-    .btn & {
-        position: relative;
-        top: -1px;
-    }
+  padding: 0.3em 0.6em 0.2em;
+  font-size: 56%;
+  line-height: 0.1;
+  vertical-align: middle;
+  // Quick fix for labels in buttons
+  .btn & {
+    position: relative;
+    top: -1px;
+  }
+}
+
+// Modifies labels to allow for disabled/muted labels
+.bg-muted {
+  &.label-default {
+    .label-variant(fade(@label-default-bg, 50%));
+  }
+  
+  &.label-primary {
+    .label-variant(fade(@label-primary-bg));
+  }
+  
+  &.label-success {
+    .label-variant(fade(@label-success-bg));
+  }
+  
+  &.label-info {
+    .label-variant(fade(@label-info-bg));
+  }
+  
+  &.label-warning {
+    .label-variant(fade(@label-warning-bg));
+  }
+  
+  &.label-danger {
+    .label-variant(fade(@label-danger-bg));
+  }
+  
+  &.label-black {
+      .label-variant(fade(@label-black-bg));
+  }
+  
+  &.label-white {
+      .label-variant(fade(@label-white-bg));
+  }
 }
