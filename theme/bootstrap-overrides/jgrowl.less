@@ -1,0 +1,32 @@
+// Override jGrowl styling with Bootstrap 3 classes
+
+.jGrowl .jGrowl-notification {
+	&.alert {
+		.alert;
+		.alert-dismissible;
+		
+		.jGrowl-close {
+			.alert-dismissible > .close;
+		}
+	}
+	
+	&.alert-success {
+	  .alert-success;
+	}
+	
+	&.alert-info {
+	  .alert-info;
+	}
+	
+	&.alert-warning {
+	  .alert-warning;
+	}
+	
+	&.alert-danger {
+	  .alert-danger;
+	}
+	
+	.jGrowl-close {
+		.close;
+	}
+}
