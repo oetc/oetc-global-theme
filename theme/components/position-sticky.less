@@ -1,42 +1,86 @@
 /*--------------------------------------------------------------
 # Standard sizes for position:sticky
 --------------------------------------------------------------*/
-.sticky-xxl {
-  position: sticky;
-  top: 200px;
+@media (min-width: @screen-sm-min) {
+  .sticky-xxl {
+    position: sticky;
+    top: 200px;
+  }
+
+  .sticky-xl {
+    position: sticky;
+    top: 100px;
+  }
+
+  .sticky-lg {
+    position: sticky;
+    top: 60px;
+  }
+
+  .sticky-md {
+    position: sticky;
+    top: 30px;
+  }
+
+  .sticky-sm {
+    position: sticky;
+    top: 20px;
+  }
+
+  .sticky-xs {
+    position: sticky;
+    top: 10px;
+  }
+
+  .sticky-xxs {
+    position: sticky;
+    top: 5px;
+  }
+
+  .sticky-none {
+    position: sticky;
+    top: 0;
+  }
 }
 
-.sticky-xl {
-  position: sticky;
-  top: 100px;
-}
+@media (max-width: @screen-xs-max) {
+  .xs-sticky-xxl {
+    position: sticky;
+    top: 200px;
+  }
 
-.sticky-lg {
-  position: sticky;
-  top: 60px;
-}
+  .xs-sticky-xl {
+    position: sticky;
+    top: 100px;
+  }
 
-.sticky-md {
-  position: sticky;
-  top: 30px;
-}
+  .xs-sticky-lg {
+    position: sticky;
+    top: 60px;
+  }
 
-.sticky-sm {
-  position: sticky;
-  top: 20px;
-}
+  .xs-sticky-md {
+    position: sticky;
+    top: 30px;
+  }
 
-.sticky-xs {
-  position: sticky;
-  top: 10px;
-}
+  .xs-sticky-sm {
+    position: sticky;
+    top: 20px;
+  }
 
-.sticky-xxs {
-  position: sticky;
-  top: 5px;
-}
+  .xs-sticky-xs {
+    position: sticky;
+    top: 10px;
+  }
 
-.sticky-none {
-  position: sticky;
-  top: 0;
+  .xs-sticky-xxs {
+    position: sticky;
+    top: 5px;
+  }
+
+  .xs-sticky-none {
+    position: sticky;
+    top: 0;
+  }
 }
