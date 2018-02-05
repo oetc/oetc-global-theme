@@ -73,6 +73,23 @@
   margin-right: auto;
 }
 
+/**
+ * .vertical-center
+ *
+ * When attached to a .row, .vertical-center will overwrite the default Bootstrap
+ * layout for immediate child columns to use `display: inline-block` in order to
+ * center align them vertically.
+ *
+ * PLEASE NOTE that you must remove all whitespace between elements in the HTML
+ * for this to work; otherwise, extra space will be introduced between the column
+ * elements.
+ */
+.vertical-center > [class*='col-'] {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
 // Added contextual color classes
 .bg-gray-light {
   background-color: @gray-light;
