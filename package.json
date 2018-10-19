@@ -1,6 +1,6 @@
 {
   "name": "oetc-global-theme",
-  "version": "1.4.7",
+  "version": "1.4.7.1",
   "homepage": "https://github.com/oetc/oetc-global-theme",
   "authors": [
     "Stephen Yamada <syamada@oetc.org>",
@@ -23,8 +23,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "fontawesome": "FortAwesome/Font-Awesome#v4.7.0",
-    "Yamm3": "geedmo/yamm3#v1.1.0"
+    "font-awesome": "github:FortAwesome/Font-Awesome#v4.7.0",
+    "Yamm": "github:geedmo/yamm3#v1.1.0"
   },
   "private": true
 }
