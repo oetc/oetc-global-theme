@@ -1,0 +1,29 @@
+{
+  "name": "oetc-global-theme",
+  "homepage": "https://github.com/oetc/oetc-global-theme",
+  "authors": [
+    "Stephen Yamada <syamada@oetc.org>",
+    "Ruslan Krasnoslobodcev <ruslan@oetc.org>",
+    "Ian Beck <ibeck@oetc.org>"
+  ],
+  "description": "Bootstrap 3 theme for OETC.org",
+  "main": "oetc-bootstrap-theme.less",
+  "keywords": [
+    "bootstrap3",
+    "site-theme"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "fontawesome": "4.7.0",
+    "Yamm3": "yamm3#^1.1.0"
+  },
+  "private": true
+}
