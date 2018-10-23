@@ -7,56 +7,48 @@
 5. Custom site-wide components
 6. Helper classes
 --------------------------------------------------------------*/
-
 /*--------------------------------------------------------------
 # Boostrap
 --------------------------------------------------------------*/
-@import "./node_modules/bootstrap/less/bootstrap.less";
-
+@import "./vendor/bootstrap/less/bootstrap.less";
 /*--------------------------------------------------------------
 # Font Awesome
 --------------------------------------------------------------*/
-@import "./node_modules/font-awesome/less/font-awesome.less";
-
+@import "./vendor/font-awesome/less/font-awesome.less";
 /*--------------------------------------------------------------
 # YAMM3
 --------------------------------------------------------------*/
-@import "./node_modules/Yamm/yamm/yamm.less";
-
+@import "./vendor/yamm/less/yamm.less";
 /*--------------------------------------------------------------
 # Avenir webfont
 --------------------------------------------------------------*/
-@import "theme/fonts.less";
-
+@import "./theme/fonts.less";
 /*--------------------------------------------------------------
 # OETC Bootstrap variables, mixins, and overrides
 --------------------------------------------------------------*/
-@import "theme/variables.less";
-@import "theme/mixins.less";
-@import "theme/bootstrap-overrides.less";
-
+@import "./theme/variables.less";
+@import "./theme/mixins.less";
+@import "./theme/bootstrap-overrides.less";
 /*--------------------------------------------------------------
 # Custom site-wide components
 --------------------------------------------------------------*/
-@import "theme/components/navbar.less";
-@import "theme/components/nav-pill-bar.less";
-@import "theme/components/nav-tabs-limitless.less";
-@import "theme/components/nav-tabs-lg.less";
-@import "theme/components/table-summary.less";
-@import "theme/components/table-column-spacing.less";
-@import "theme/components/position-sticky.less";
-@import "theme/custom-labels.less";
-
+@import "./theme/components/navbar.less";
+@import "./theme/components/nav-pill-bar.less";
+@import "./theme/components/nav-tabs-limitless.less";
+@import "./theme/components/nav-tabs-lg.less";
+@import "./theme/components/table-summary.less";
+@import "./theme/components/table-column-spacing.less";
+@import "./theme/components/position-sticky.less";
+@import "./theme/custom-labels.less";
 /*--------------------------------------------------------------
 # Print styles
 --------------------------------------------------------------*/
-@import "theme/print.less";
-@import "theme/print-grid.less";
-
+@import "./theme/print.less";
+@import "./theme/print-grid.less";
 /*--------------------------------------------------------------
 # Helper classes
 --------------------------------------------------------------*/
-@import "theme/spacing.less";
+@import "./theme/spacing.less";
 
 /**
  * col-solo
@@ -116,8 +108,8 @@ a.link-muted, span.link-muted {
   cursor: pointer;
 
   &:hover, &:focus {
-	color: @headings-color;
-	text-decoration: none;
+    color: @headings-color;
+    text-decoration: none;
   }
 }
 
@@ -126,13 +118,13 @@ a.link-muted, span.link-muted {
   color: @link-color;
   text-decoration: none;
   cursor: pointer;
-  
+
   &:hover,
   &:focus {
     color: @link-hover-color;
     text-decoration: @link-hover-decoration;
   }
-  
+
   &:focus {
     .tab-focus();
   }
@@ -150,7 +142,7 @@ a.link-muted, span.link-muted {
 }
 
 .strikethrough {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 // Cursor styling
@@ -163,6 +155,7 @@ a.link-muted, span.link-muted {
   .pull-right-xs {
     .pull-right
   }
+
   .pull-left-xs {
     .pull-left
   }
@@ -172,6 +165,7 @@ a.link-muted, span.link-muted {
   .pull-right-sm {
     .pull-right
   }
+
   .pull-left-sm {
     .pull-left
   }
@@ -181,6 +175,7 @@ a.link-muted, span.link-muted {
   .pull-right-md {
     .pull-right
   }
+
   .pull-left-md {
     .pull-left
   }
@@ -200,7 +195,7 @@ a.link-muted, span.link-muted {
 .has-error {
   .help-block.default-block {
     color: lighten(@text-color, 25%);
-    
+
     &.text-muted {
       color: @text-muted;
     }
